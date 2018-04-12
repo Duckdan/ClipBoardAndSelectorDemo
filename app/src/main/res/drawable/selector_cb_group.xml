@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        如果在此处我将控件不被选中的状态也加入进来，同时将控件不被激活状态放在这两个互斥
+        状态之后，那么这个不被激活的状态将永远不会被匹配到
+    -->
+
+    <!--设置控件处于不被激活状态时候的背景图片-->
+    <item android:drawable="@drawable/icon_cb_add_member" android:state_enabled="false"/>
+    <!--设置控件处于选中状态时候的背景图片-->
+    <item android:drawable="@drawable/icon_cb_checked" android:state_checked="true"/>
+    <!--如果控件不处于上面的两种状态，那么控件的背景图片就是下面这一张-->
+    <item android:drawable="@drawable/icon_cb_checked_un"/>
+</selector>
